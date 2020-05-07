@@ -1,0 +1,10 @@
+    spring:
+      datasource:
+        url: jdbc:sqlserver://DESKTOP-G1UMMVA\SQLEXPRESS;databaseName=EtkinlikDb;integratedSecurity=true
+        username:
+        password:
+      jpa:
+        show-sql: true
+        hibernate:
+          ddl-auto: create-drop
+
