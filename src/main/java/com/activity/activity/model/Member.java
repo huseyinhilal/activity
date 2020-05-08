@@ -9,7 +9,9 @@ import javax.persistence.Id;
 public class Member {
     @Id
     @GeneratedValue
+    @Column(name = "Member_Id")
     private Integer memberId;
+    @Column(name = "Name")
     private String name;
 
 

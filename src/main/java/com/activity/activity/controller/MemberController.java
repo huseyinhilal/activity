@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value="/rest/members")
+@RequestMapping(value="/rest/member")
 public class MemberController {
 
     @Autowired
