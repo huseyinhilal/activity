@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/rest/participation")
 public class ParticipationController {
-
         @Autowired
         ParticipationRepository participationRepository;
 
@@ -20,6 +19,12 @@ public class ParticipationController {
         public List<Participation> getAll() {
             return participationRepository.findAll();
         }
+
+        /*
+        @GetMapping(value = "/$bid")
+        public List<Participation> getAllById() {
+            return participationRepository.findAllById();
+        }*/
 
         @PostMapping(value = "/load")
         public List<Participation> persist(@RequestBody final Participation participation) {
