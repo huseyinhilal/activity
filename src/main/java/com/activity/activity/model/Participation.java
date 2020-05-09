@@ -11,7 +11,7 @@ public class Participation {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer participationId;
-    private Integer memberId;
+    private Integer userId;
     private Integer activityId;
 
 
@@ -23,12 +23,12 @@ public class Participation {
         this.participationId = participationId;
     }
 
-    public Integer getMemberId() {
-        return memberId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Integer getActivityId() {

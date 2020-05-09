@@ -1,11 +1,13 @@
 package com.activity.activity.controller;
 
 import com.activity.activity.model.Activity;
+import com.activity.activity.model.Users;
 import com.activity.activity.repository.ActivityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value="/rest/activity")
@@ -22,5 +24,11 @@ public class ActivityController {
     public List<Activity> persist(@RequestBody final Activity activity) {
         activityRepository.save(activity);
         return activityRepository.findAll();
+    }
+
+    //id'ye göre etkinlik çekmek
+    @PostMapping(value="/loadby")
+    public Optional<Activity> getUserById(@RequestBody Integer activityId){
+        return activityRepository.findById(activityId);
     }
 }

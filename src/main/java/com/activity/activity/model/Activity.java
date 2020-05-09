@@ -9,7 +9,7 @@ public class Activity {
     private Integer activityId;
     private String activityName;
     private String comment;
-    private Integer createdMemberId;
+    private Integer createdUserId;
 
 
     public Integer getActivityId() {
@@ -36,12 +36,12 @@ public class Activity {
         this.comment = comment;
     }
 
-    public Integer getCreatedMemberId() {
-        return createdMemberId;
+    public Integer getCreatedUserId() {
+        return createdUserId;
     }
 
-    public void setCreatedMemberId(Integer createdMemberId) {
-        this.createdMemberId = createdMemberId;
+    public void setCreatedUserId(Integer createdUserId) {
+        this.createdUserId = createdUserId;
     }
 
     public Activity(){

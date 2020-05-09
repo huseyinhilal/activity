@@ -3,19 +3,19 @@ package com.activity.activity.model;
 import javax.persistence.*;
 
 @Entity
-public class Member {
+public class Users {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer memberId;
+    private Integer userId;
     private String name;
 
 
-    public Integer getMemberId() {
-        return memberId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public class Member {
         this.name = name;
     }
 
-    public Member(){
+    public Users(){
 
     }
 }
