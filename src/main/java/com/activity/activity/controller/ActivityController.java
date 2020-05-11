@@ -1,7 +1,6 @@
 package com.activity.activity.controller;
 
 import com.activity.activity.model.Activity;
-import com.activity.activity.model.Users;
 import com.activity.activity.repository.ActivityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -28,7 +27,7 @@ public class ActivityController {
 
     //id'ye göre etkinlik çekmek
     @PostMapping(value="/loadby")
-    public Optional<Activity> getUserById(@RequestBody Integer activityId){
-        return activityRepository.findById(activityId);
+    public Optional<Activity> getUserById(@RequestBody Integer userId){
+        return activityRepository.findById(userId);
     }
 }

@@ -8,6 +8,7 @@ public class Users {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer userId;
     private String name;
+    private String password;
 
 
     public Integer getUserId() {
@@ -24,6 +25,15 @@ public class Users {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Users(){
